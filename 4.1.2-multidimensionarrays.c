@@ -1,22 +1,19 @@
 #include<stdio.h>
-
+#include<string.h>
 
 int main()
 {
-    int rows = 3;
+        int rows = 3;
     int const columns = 4;
-    int studentGrades[][columns] = {
-                            {1, 3, 4, 6},
-                            {3, 2, 4, 5},
-                            {32, 2, 4, 9}
-                            };  //atleast columns is required
-                                //in declaration
-
+    int studenGrades[rows][columns] = {0};
+    int studentGrades[rows][columns] = { {1, 3, 4, 6}, {3, 2, 4, 5}, {32, 2, 4, 9}};  
+                             
     for (int i = 0; i < rows; i++)
     {
-        for (int k = 0; k < columns; k++)
+        for (int j = 0; j < columns; j++)
+                
         {
-            printf("%d\t", studentGrades[i][k]);
+            printf("%d\t", studentGrades[i][j]);
         }
         printf("\n");
     }
